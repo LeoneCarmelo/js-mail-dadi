@@ -20,4 +20,23 @@ for (let i = 0; i < emailList.length; i++) {
         console.log('Your email is not in the list')
     }
 }  
- 
+
+
+
+
+
+// Dices Game
+/* Generare un numero random da 1 a 6 sia per il giocatore sia per il computer. 
+Stabilire il vincitore, in base a chi fa il punteggio più alto.
+Prima di partire a scrivere codice poniamoci qualche domanda:
+ */
+
+const userChoice = Math.ceil(Math.random()*6)
+const computerChoice = Math.ceil(Math.random()*6)
+if (userChoice > computerChoice) {
+    console.log(userChoice, computerChoice)
+    console.log('You won!')
+} else {
+    console.log(userChoice, computerChoice)
+    console.log('You lost!')
+}
